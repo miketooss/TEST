@@ -3,6 +3,7 @@
 switch($a) {
 	case 'assignBillList':
 		checkRights(APP_MANAGER_VALUE, true);
+		print_r(1);
 		require_once(OM_PATH.'HolidayMgr.php');
 		$holidayMgr = HolidayMgr::getInstance();
 		$holiday = $holidayMgr->getHolidayById($memberInfo['holidayId']);
