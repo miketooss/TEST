@@ -5,6 +5,7 @@ switch($a) {
 		checkRights(APP_MANAGER_VALUE, true);
 		require_once(OM_PATH.'HolidayMgr.php');
 		$holidayMgr = HolidayMgr::getInstance();
+		print_r(2);
 		$holiday = $holidayMgr->getHolidayById($memberInfo['holidayId']);
 		if($holiday->assignStatus == HOLIDAY_ASSIGN_STATUS_NOT_ASSIGN)
 		{
